@@ -36,6 +36,7 @@ height: auto;
     --standart-wite: #FFFFFF;
     --fotter-text:#e7e9fc;
     --fotter-span: #f4f4fd;
+    --border-color:#8E8F99; 
 }
 p,h1,h2,h3,h4,h5,h6{
     margin: 0;
@@ -209,7 +210,18 @@ body {
         letter-spacing: 0.02em;
 }
 .main-section{
+
+    max-width: 1440px;
+    height: 600px;
+    display: block ;
+    margin-right: auto;
+    margin-left: auto;
     background-color: var(--bcg-color);
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7) , rgba(46, 47, 66, 0.7)) , url("../images/people-office.jpg") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+
     text-align: center;
     padding-top: 188px;
     padding-bottom: 188px;
@@ -271,8 +283,34 @@ body {
     display: flex; 
  }
  .descript-list .item{
-    /* width: 264px; */
     flex-basis: calc((100%-24px*3)/4);
+ }
+
+ .descript-list .item::before{
+    content:"" ;
+    margin-bottom: 8px ;
+    height: 112px;
+    display: block;
+    
+    background-color: var(--fotter-span);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+ }
+
+ .item:nth-child(1)::before {
+    background-image: url(../images/antenna.svg);  
+ }
+ .item:nth-child(2)::before{
+    background-image: url(../images/cloc.svg);
+
+ }
+ .item:nth-child(3)::before{
+    background-image: url(../images/diagram.svg);
+
+ }
+ .item:nth-child(4)::before{
+background-image: url(../images/astronaut.svg);
  }
  .discription-img {
      color: var(--content-color);
@@ -288,7 +326,6 @@ body {
  .our-work{
     padding-bottom: 120px;
  }
-
 
 .team-list .discription-img{
     text-align: center;
@@ -318,6 +355,17 @@ body {
 .our-text{
     padding: 32px 16px;
 }
+ .customers{
+    padding: 120px 0;
+ }
+
+ .customers-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+
 
 .gallery-section{
     padding-top: 96px;
@@ -347,6 +395,10 @@ body {
 .gallery-card .item{
     background:var(--standart-wite);
     
+}
+
+.gallery-card .item:hover{
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .gallery-text{
     border: 1px solid var(--fotter-text);
