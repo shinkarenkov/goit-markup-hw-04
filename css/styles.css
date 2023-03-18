@@ -365,6 +365,25 @@ background-image: url(../images/astronaut.svg);
     align-items: center;
  }
 
+ /* .customers-list .item{
+    width: 168px;
+    height: 88px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+ } */
+
+ .customers-list .item:not(:last-child){
+    margin-right: 24px;
+ }
+
+ .customers-list .item .icom-customers{
+    width: 168px;
+        height: 88px;
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+    
+ }
+
 
 
 .gallery-section{
