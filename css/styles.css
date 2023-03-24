@@ -217,7 +217,6 @@ body {
 
     max-width: 1440px;
     height: 600px;
-    display: block ;
     margin-right: auto;
     margin-left: auto;
     background-color: var(--bcg-color);
@@ -295,6 +294,7 @@ body {
     margin-bottom: 8px ;
     height: 112px;
     display: block;
+    border-radius: 4px;
     
     background-color: var(--fotter-span);
     background-repeat: no-repeat;
@@ -385,7 +385,8 @@ background-image: url(../images/astronaut.svg);
     
 }
 
-.soc-link:hover{
+.soc-link:hover,
+.soc-link:focus{
     background-color: var(--button-hover);
 }
 
@@ -408,21 +409,29 @@ background-image: url(../images/astronaut.svg);
     align-items: center;
     width: 168px;
     height: 88px;
+    
     border: 1px solid var(--border-color);
     border-radius: 4px;
  }
+
+.link-customers:hover,
+.link-customers:focus {
+    border: 1px solid var(--accent-color);
+}
 
 .customers-list .item:not(:last-child){
     margin-right: 24px;
  }
 
  .icon-customers{
-    width: 104px;
-    height: 56px;
+    padding: 16px 32px;
+    width: 100%;
+    height: 100%;
     fill: var(--border-color);
  }
 
- .icon-customers:hover{
+ .icon-customers:hover,
+ .icon-customers:focus {
     fill: var(--accent-color);
  }
 
@@ -455,8 +464,14 @@ background-image: url(../images/astronaut.svg);
     background:var(--standart-wite);
     
 }
+.gallery-card .item:hover,
+.gallery-card .item:focus{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
-.gallery-card .item:hover{
+
+.link-gallery:hover,
+.link-gallery:focus{
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .gallery-text{
@@ -475,9 +490,8 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 .footer-center{
     display: flex;
-    align-items: center;
-    justify-content: left;
-    gap: 120px;
+    
+    
 }
 
 .footer-content{
@@ -493,8 +507,8 @@ color: var(--fotter-span);
 .soc-list-footer{
     display: flex;
     align-items: center;
-    justify-content: left;
-    gap: 16px  ;
+    gap: 24px;
+    
 }
 
 .section-title-footer{
@@ -526,7 +540,12 @@ color: var(--fotter-span);
     
 }
 
-.soc-link-footer:hover{
+.soc-footer{
+    margin-left: 120px;
+}
+
+.soc-link-footer:hover,
+.soc-link-footer:focus{
     background-color: var(--button-hover);
 }
 
