@@ -433,6 +433,38 @@ background-image: url(../images/astronaut.svg);
     fill: var(--accent-color);
  }
 
+ .overlay-text{
+    position: absolute;
+    transform: translateY(100%);
+    transition: transform 500ms linear ;
+    top: 0;
+    left: 0;
+    background-color: var(--accent-color);
+    width: 100%;
+    height: 100%;
+    
+    padding-top: 40px;
+    padding-left: 32px; 
+    padding-right: 32px;
+
+    overflow: auto;
+    color: var(--fotter-span);
+    font-family: 'Roboto',sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+ }
+
+ .link-gallery:hover .overlay-text ,
+ .link-gallery:focus .overlay-text {
+    transform: translateY(0);
+ }
+
+ .gallery-overlay{
+position: relative;
+overflow: hidden;
+ }
 .gallery-section {
     padding-top: 96px;
     padding-bottom: 120px;
@@ -464,6 +496,7 @@ background-image: url(../images/astronaut.svg);
 }
 
 .link-gallery{
+   
     display: block;
 }
 
