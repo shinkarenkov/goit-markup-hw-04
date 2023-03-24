@@ -416,6 +416,7 @@ background-image: url(../images/astronaut.svg);
 
 .link-customers:hover,
 .link-customers:focus {
+    fill: var(--accent-color);
     border: 1px solid var(--accent-color);
 }
 
