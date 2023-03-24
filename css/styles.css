@@ -424,9 +424,7 @@ background-image: url(../images/astronaut.svg);
  }
 
  .icon-customers{
-    padding: 16px 32px;
-    width: 100%;
-    height: 100%;
+   
     fill: var(--border-color);
  }
 
@@ -464,11 +462,10 @@ background-image: url(../images/astronaut.svg);
     background:var(--standart-wite);
     
 }
-.gallery-card .item:hover,
-.gallery-card .item:focus{
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
 
+.link-gallery{
+    display: block;
+}
 
 .link-gallery:hover,
 .link-gallery:focus{
